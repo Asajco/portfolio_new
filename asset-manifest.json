@@ -1,0 +1,29 @@
+{
+  "files": {
+    "main.css": "/portfolio-new/static/css/main.8caf199a.css",
+    "main.js": "/portfolio-new/static/js/main.3c810c38.js",
+    "static/media/contact.png": "/portfolio-new/static/media/contact.14b35407cac4c4b0b1a0.png",
+    "static/media/autocentrum.png": "/portfolio-new/static/media/autocentrum.874353cb0f0ac4046c15.png",
+    "static/media/html.png": "/portfolio-new/static/media/html.64ac5aa7e13f6d203988.png",
+    "static/media/voidd.png": "/portfolio-new/static/media/voidd.761a2a07cc2dc8f0d562.png",
+    "static/media/viewtown.png": "/portfolio-new/static/media/viewtown.8dd2d04aea41ca657a8a.png",
+    "static/media/pc.png": "/portfolio-new/static/media/pc.534b5ae3435af61290b0.png",
+    "static/media/projectsImage.png": "/portfolio-new/static/media/projectsImage.54f2709c76cae06880a4.png",
+    "static/media/study.png": "/portfolio-new/static/media/study.23d14515e940e97cd21e.png",
+    "static/media/react.png": "/portfolio-new/static/media/react.cd7dd8a09a784b403c1e.png",
+    "static/media/git.png": "/portfolio-new/static/media/git.a162f9e830fa501ef49b.png",
+    "static/media/chakra.png": "/portfolio-new/static/media/chakra.03f4689f79c7b4e5d1c8.png",
+    "static/media/linkedin.png": "/portfolio-new/static/media/linkedin.660b1370d0471f345924.png",
+    "static/media/nextJS.png": "/portfolio-new/static/media/nextJS.ea85e31fc555af66c7c6.png",
+    "static/media/jira.png": "/portfolio-new/static/media/jira.ebded40a0a599c2b1cd1.png",
+    "static/media/ts.png": "/portfolio-new/static/media/ts.18bf385e3d8161f35057.png",
+    "static/media/firebase.png": "/portfolio-new/static/media/firebase.a149232308a20ac836d7.png",
+    "index.html": "/portfolio-new/index.html",
+    "main.8caf199a.css.map": "/portfolio-new/static/css/main.8caf199a.css.map",
+    "main.3c810c38.js.map": "/portfolio-new/static/js/main.3c810c38.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.8caf199a.css",
+    "static/js/main.3c810c38.js"
+  ]
+}
