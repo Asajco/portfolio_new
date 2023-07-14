@@ -13,7 +13,7 @@ function Projects() {
   return (
     <Flex flexDirection="column" alignItems="center">
       <Heading fontFamily="Oswald" m="3rem" fontSize="8rem">
-        Projects i worked on
+        Projects I have worked on
       </Heading>
       {projects.map((item) => {
         return (

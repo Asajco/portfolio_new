@@ -5,7 +5,7 @@ import Projects from './pages/Projects'
 import { Route, Router, Routes } from 'react-router'
 import { useContext } from 'react'
 import Contact from './pages/Contact'
-
+import Footer from './components/Footer'
 function App() {
   return (
     <Box>
@@ -15,6 +15,7 @@ function App() {
         <Route path="/projects" element={<Projects />} />
         <Route path="/contact" element={<Contact />} />
       </Routes>
+      <Footer />
     </Box>
   )
 }

@@ -13,7 +13,7 @@ import About from '../components/About'
 
 function Home() {
   return (
-    <Flex flexDirection="column" alignItems="center">
+    <Flex flexDirection="column" alignItems="center" position="relative">
       <Flex flexDirection="column" alignItems="center">
         <Text fontSize="3rem" fontWeight="bold" fontFamily="Oswald" mt="1rem">
           Front-End React & TypeScript Developer

@@ -27,8 +27,12 @@ const About = () => {
       justifyContent="center"
       alignItems="center"
       mt="2rem"
+      posi
+      mb="3rem"
     >
-      <Heading fontSize={39}>My journey</Heading>
+      <Heading fontSize={55} fontFamily="Oswald">
+        My journey
+      </Heading>
       <Line />
 
       <Flex
@@ -41,6 +45,8 @@ const About = () => {
         <Heading>BeCode</Heading>
         <Box w="0.2rem" h="3.5rem" bg="gray.300" m="1rem"></Box>
         <Text>December/2022 - present</Text>
+        <Box w="0.2rem" h="3.5rem" bg="gray.300" m="1rem"></Box>
+        <Text>Front-end developer</Text>
       </Flex>
       <Flex
         alignItems="center"
@@ -52,6 +58,8 @@ const About = () => {
         <Heading>WebCreators</Heading>
         <Box w="0.2rem" h="3.5rem" bg="gray.300" m="1rem"></Box>
         <Text>October/2022 - May/2023</Text>
+        <Box w="0.2rem" h="3.5rem" bg="gray.300" m="1rem"></Box>
+        <Text>Front-end developer</Text>
       </Flex>
       <Flex
         alignItems="center"
@@ -65,6 +73,8 @@ const About = () => {
         </Flex>
         <Box w="0.2rem" h="3.5rem" bg="gray.300" m="1rem"></Box>
         <Text>January/2022 - May/2022</Text>
+        <Box w="0.2rem" h="3.5rem" bg="gray.300" m="1rem"></Box>
+        <Text>Study field - Web development</Text>
       </Flex>
       <Flex
         alignItems="center"
@@ -78,6 +88,8 @@ const About = () => {
         </Flex>
         <Box w="0.2rem" h="3.5rem" bg="gray.300" m="1rem"></Box>
         <Text>September/2019 - present</Text>
+        <Box w="0.2rem" h="3.5rem" bg="gray.300" m="1rem"></Box>
+        <Text>University of Matej Bell</Text>
       </Flex>
       <Flex
         alignItems="center"
@@ -91,30 +103,10 @@ const About = () => {
         </Flex>
         <Box w="0.2rem" h="3.5rem" bg="gray.300" m="1rem"></Box>
         <Text>September/2016 - July/2019</Text>
+        <Box w="0.2rem" h="3.5rem" bg="gray.300" m="1rem"></Box>
+        <Text>High school</Text>
       </Flex>
-      <Container display="flex" alignItems="center" justifyContent="center">
-        <ChakraBox
-          animate={{
-            scale: [1, 1.2, 1.2, 1.2, 1],
-            rotate: [0, 0, 30, -30, 0],
-          }}
-          // @ts-ignore no problem in operation, although type error appears.
-          transition={{
-            duration: 3,
-            ease: 'easeInOut',
-            repeat: Infinity,
-            repeatType: 'loop',
-          }}
-          padding="2"
-          display="flex"
-          justifyContent="center"
-          alignItems="center"
-          width="100px"
-          height="100px"
-        >
-          {/* <Image src={study} alt="" /> */}
-        </ChakraBox>
-      </Container>
+
       <Image
         src={study}
         position="absolute"

@@ -11,6 +11,11 @@ import html from '../assets/html.png'
 import npm from '../assets/npm.png'
 import nextJS from '../assets/nextJS.png'
 import git from '../assets/git.png'
+import 'swiper/css'
+import 'swiper/css/pagination'
+import 'swiper/css/navigation'
+import { Autoplay, Pagination, Navigation } from 'swiper/modules'
+
 const images = [
   { src: reactImage, alt: 'React' },
   { src: ts, alt: 'TypeScript' },
@@ -40,7 +45,15 @@ const Slider = () => {
       p="0.5rem"
       cursor="grab"
     >
-      <Swiper spaceBetween={50} slidesPerView={5}>
+      <Swiper
+        spaceBetween={50}
+        slidesPerView={5}
+        autoplay={{
+          delay: 1500,
+        }}
+        loop={true}
+        modules={[Autoplay, Pagination, Navigation]}
+      >
         {images.map((image, index) => (
           <SwiperSlide key={index}>
             <LazyLoadImage src={image.src} alt={image.alt} style={imageStyle} />
