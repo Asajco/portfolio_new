@@ -1,6 +1,13 @@
 import React from 'react'
 import { projects } from '../projects'
-import { Flex, Text, Button, Link, Heading } from '@chakra-ui/react'
+import {
+  Flex,
+  Text,
+  Button,
+  Link,
+  Heading,
+  useMediaQuery,
+} from '@chakra-ui/react'
 import { motion } from 'framer-motion'
 import { LazyLoadImage } from 'react-lazy-load-image-component'
 import github from '../assets/github.png'
@@ -10,9 +17,10 @@ import voidd from '../assets/voidd.png'
 import projectImage from '../assets/projectsImage.png'
 import Line from '../components/Line'
 function Projects() {
+  const [isSmallerThan1200] = useMediaQuery('(max-width: 1200px)')
   return (
-    <Flex flexDirection="column" alignItems="center">
-      <Heading fontFamily="Oswald" m="3rem" fontSize="8rem">
+    <Flex flexDirection="column" alignItems="center" h="100%">
+      <Heading fontFamily="Oswald" m="3rem" fontSize="8rem" textAlign="center">
         Projects I have worked on
       </Heading>
       {projects.map((item) => {
@@ -25,7 +33,8 @@ function Projects() {
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
             viewport={{ once: true }}
-            h="80vh"
+            m={isSmallerThan1200 ? '2rem' : '5rem'}
+            h="80%"
           >
             <LazyLoadImage
               src={projectImage}
@@ -36,6 +45,7 @@ function Projects() {
                 top: '0',
                 margin: '3rem 0rem 0rem 2rem',
                 rotate: '340deg',
+                display: isSmallerThan1200 ? 'none' : 'block',
               }}
             />
             <LazyLoadImage
@@ -57,13 +67,14 @@ function Projects() {
                 right: '3rem',
                 buttom: '0',
                 margin: '4rem 0rem 0rem 0rem',
+                display: isSmallerThan1200 ? 'none' : 'block',
                 // rotate: '350deg',
               }}
             />
             <Heading fontFamily="Oswald" m="1rem 0rem 0.45rem 0rem">
               {item.name}
             </Heading>
-            <Text fontSize="small" fontFamily="Roboto Mono">
+            <Text fontSize="small" fontFamily="Roboto Mono" textAlign="center">
               {item.tech}
             </Text>
             <Line width={'90%'} />

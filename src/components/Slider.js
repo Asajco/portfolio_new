@@ -1,5 +1,5 @@
 import { Swiper, SwiperSlide } from 'swiper/react'
-import { Flex } from '@chakra-ui/react'
+import { Flex, Grid, useMediaQuery } from '@chakra-ui/react'
 import { LazyLoadImage } from 'react-lazy-load-image-component'
 import reactImage from '../assets/react.png'
 import ts from '../assets/ts.png'
@@ -37,29 +37,42 @@ const imageStyle = {
 }
 
 const Slider = () => {
+  const [isSmallerThan600] = useMediaQuery('(max-width: 900px)')
   return (
     <Flex
-      w="70%"
+      w="100%"
       justifyContent="space-evenly"
       m="2rem 0rem"
       p="0.5rem"
       cursor="grab"
     >
-      <Swiper
-        spaceBetween={50}
-        slidesPerView={5}
-        autoplay={{
-          delay: 1500,
-        }}
-        loop={true}
-        modules={[Autoplay, Pagination, Navigation]}
+      <Flex
+        w="70%"
+        justifyContent={isSmallerThan600 ? 'center' : 'space-evenly'}
+        m="2rem 0rem"
+        p="0.5rem"
+        cursor="grab"
       >
-        {images.map((image, index) => (
-          <SwiperSlide key={index}>
-            <LazyLoadImage src={image.src} alt={image.alt} style={imageStyle} />
-          </SwiperSlide>
-        ))}
-      </Swiper>
+        <Swiper
+          spaceBetween={50}
+          slidesPerView={isSmallerThan600 ? 2 : 5}
+          autoplay={{
+            delay: 1500,
+          }}
+          loop={true}
+          modules={[Autoplay, Pagination, Navigation]}
+        >
+          {images.map((image, index) => (
+            <SwiperSlide key={index}>
+              <LazyLoadImage
+                src={image.src}
+                alt={image.alt}
+                style={imageStyle}
+              />
+            </SwiperSlide>
+          ))}
+        </Swiper>
+      </Flex>
     </Flex>
   )
 }

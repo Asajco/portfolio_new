@@ -14,17 +14,40 @@ import About from '../components/About'
 function Home() {
   return (
     <Flex flexDirection="column" alignItems="center" position="relative">
-      <Flex flexDirection="column" alignItems="center">
-        <Text fontSize="3rem" fontWeight="bold" fontFamily="Oswald" mt="1rem">
+      <Flex flexDirection="column" alignItems="center" textAlign="center">
+        <Text
+          fontSize="3rem"
+          fontWeight="bold"
+          fontFamily="Oswald"
+          mt="1rem"
+          alignSelf="center"
+        >
           Front-End React & TypeScript Developer
         </Text>
 
-        <Flex flexDirection="column" w="60%" mt="3rem" alignItems="center">
+        <Flex
+          flexDirection="column"
+          w="60%"
+          mt="3rem"
+          alignItems="center"
+          sx={{
+            '@media screen and (max-width: 1200px)': {
+              w: '100%',
+            },
+          }}
+        >
           <Text fontFamily="Roboto" fontWeight="hairline" fontSize="1.5rem">
             If you are looking for front-end developer, you are at right place!
           </Text>
           <Line />
-          <Box mt="1rem">
+          <Box
+            mt="1rem"
+            sx={{
+              '@media screen and (max-width: 1200px)': {
+                display: 'none',
+              },
+            }}
+          >
             <LazyLoadImage
               src={pc}
               width="27%"
@@ -41,6 +64,11 @@ function Home() {
             w="55%"
             fontFamily="Roboto Mono"
             fontWeight="hairline"
+            sx={{
+              '@media screen and (max-width: 1200px)': {
+                mt: '2rem',
+              },
+            }}
           >
             I am a 22-year-old web developer based in Slovakia with almost two
             years of professional experience. Throughout my career, I have
