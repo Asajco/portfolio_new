@@ -26,6 +26,7 @@ const About = () => {
       flexDirection={isSmallerThan1200 ? 'column' : 'row'}
       borderTop={isSmallerThan1200 ? '1px solid gray' : 'none'}
       mt={isSmallerThan1200 ? '1.5rem' : 0}
+      p={isSmallerThan1200 ? '1rem' : '0'}
     >
       <Heading>{heading}</Heading>
       <Box

@@ -4,13 +4,12 @@ import github from '../assets/github.png'
 import linkedin from '../assets/linkedin.png'
 import { LazyLoadImage } from 'react-lazy-load-image-component'
 import { useForm } from 'react-hook-form'
-import contact from '../assets/contact.png'
+
 import PhoneIcon from '@mui/icons-material/Phone'
 import AlternateEmailIcon from '@mui/icons-material/AlternateEmail'
 import PersonIcon from '@mui/icons-material/Person'
 import {
   Flex,
-  FormLabel,
   Heading,
   Text,
   Input,
@@ -19,9 +18,11 @@ import {
   Link,
   Button,
   useToast,
+  useMediaQuery,
 } from '@chakra-ui/react'
 
 const Contact = () => {
+  const [isSmallerThan1200] = useMediaQuery('(max-width: 1200px)')
   const toast = useToast()
   const scrollUp = () => {
     window.scrollTo({
@@ -77,12 +78,12 @@ const Contact = () => {
       initial={{ opacity: 0 }}
       whileInView={{ opacity: 1 }}
       viewport={{ once: true }}
-      flexDirection="row"
+      flexDirection={isSmallerThan1200 ? 'column' : 'row'}
       position="relative"
-      alignItems="flex-start"
+      alignItems={isSmallerThan1200 ? 'center' : 'flex-start'}
       justifyContent="center"
       w="100vw"
-      mt="8rem"
+      mt={isSmallerThan1200 ? '1rem' : '8rem'}
       fontFamily="Roboto Mono"
     >
       {/* <Image
@@ -103,11 +104,17 @@ const Contact = () => {
           width: '60vw',
         }}
       >
-        <Heading mb="2rem" alignSelf="center" fontSize={60} fontFamily="Oswald">
+        <Heading
+          mb="2rem"
+          alignSelf="center"
+          fontSize={60}
+          fontFamily="Oswald"
+          textAlign="center"
+        >
           {' '}
           Interested in my work?
         </Heading>
-        <Flex>
+        <Flex flexDirection={isSmallerThan1200 ? 'column' : 'row'} gap="0.5rem">
           <Input
             {...register('userName', { required: 'This field is required' })}
             placeholder="Your name..."
@@ -156,7 +163,8 @@ const Contact = () => {
         alignItems="center"
         textAlign="center"
         w="20rem"
-        ml="4rem"
+        mt={isSmallerThan1200 ? '2rem' : '0rem'}
+        ml={isSmallerThan1200 ? '0rem' : '4rem'}
       >
         <Heading fontFamily="Oswald" fontSize={45}>
           Contact me today!
