@@ -29,6 +29,7 @@ function Home() {
           flexDirection="column"
           w="60%"
           mt="3rem"
+          p="1rem"
           alignItems="center"
           sx={{
             '@media screen and (max-width: 1200px)': {
@@ -71,10 +72,12 @@ function Home() {
             }}
           >
             I am a 22-year-old web developer based in Slovakia with almost two
-            years of professional experience. Throughout my career, I have
-            worked on various projects, improving my skills in a wide range of
-            technologies. My primary tech stack is bellow, but I also have some
-            experience with NodeJS, PostgreSQL, GraphQL, and Twig, which I
+            years of professional experience. In 2023 i have graduated at
+            University of Matej Bel in Slovakia. I have finnished my Bachelor in
+            Computer Sciences and Software Engineering. Throughout my career, I
+            have worked on various projects, improving my skills in a wide range
+            of technologies. My primary tech stack is bellow, but I also have
+            some experience with NodeJS, PostgreSQL, GraphQL, and Twig, which I
             primarily used in school projects. As a developer, I'm always eager
             to learn and grow, constantly seeking new opportunities to expand my
             skill set and take on exciting challenges.

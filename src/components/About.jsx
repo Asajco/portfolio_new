@@ -77,7 +77,7 @@ const About = () => {
       )}
       {renderTimelineItem(
         'Applied Science and Software Engineering at UMB',
-        'September/2019 - present',
+        'September/2019 - May/2023',
         'University of Matej Bell',
       )}
       {renderTimelineItem(

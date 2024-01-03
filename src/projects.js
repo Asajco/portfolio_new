@@ -1,5 +1,15 @@
 export const projects = [
   {
+    name: 'ManageIT',
+    description:
+      'ManageIT is a comprehensive ReactJS-based web application designed to streamline and enhance the management of product inventory within a company. With a user-friendly interface and robust features, ManageIT empowers users to efficiently monitor and control the current state of each product in storage, track changes, manage shifts, add new items, add new users, and record daily sales.',
+    role: 'Designer, Developer',
+    jobDesription:
+      'Basicaly i created this concept of management application for my job. In this project i did simple design and also whole logic behind this project.',
+    tech: 'React Firebase ChakraUI',
+    repo: '',
+  },
+  {
     name: 'Autocentrum',
     description:
       '"We had the privilege to collaborate with Autocentrum, a dealer of Hyundai and Opel vehicles. Our main goal was to design and implement a CRM system for customer management that would streamline and simplify the work of sales representatives in accessing customer information. Thanks to this collaboration, we contributed to improving their sales process and increasing customer satisfaction at Autocentrum."',

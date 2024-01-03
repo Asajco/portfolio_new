@@ -20,14 +20,14 @@ function Projects() {
   const [isSmallerThan1200] = useMediaQuery('(max-width: 1200px)')
   return (
     <Flex flexDirection="column" alignItems="center" h="100%">
-      <Heading fontFamily="Oswald" m="3rem" fontSize="8rem" textAlign="center">
+      <Heading fontFamily="Oswald" m="3rem" fontSize="4rem" textAlign="center">
         Projects I have worked on
       </Heading>
       {projects.map((item) => {
         return (
           <Flex
             flexDirection="column"
-            w="50%"
+            w="70%"
             alignItems="center"
             as={motion.div}
             initial={{ opacity: 0 }}
