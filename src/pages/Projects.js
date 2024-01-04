@@ -10,6 +10,7 @@ import {
 } from '@chakra-ui/react'
 import { motion } from 'framer-motion'
 import { LazyLoadImage } from 'react-lazy-load-image-component'
+import { FaExternalLinkAlt } from 'react-icons/fa'
 import github from '../assets/github.png'
 import viewtown from '../assets/viewtown.png'
 import autocentrum from '../assets/autocentrum.png'
@@ -88,15 +89,29 @@ function Projects() {
             <Text textAlign="justify" fontFamily="Roboto Mono">
               {item.jobDesription}
             </Text>
-
-            {item.repo !== '' ? (
-              <Button m="1rem">
-                <Link href={item.repo} target="_blank" mr="0.5rem">
-                  Repo
-                </Link>
-                <LazyLoadImage src={github} width="20.4rem" />
-              </Button>
-            ) : null}
+            <Flex alignItems="center">
+              {item.repo !== '' ? (
+                <Button m="1rem">
+                  <Link href={item.repo} target="_blank" mr="0.5rem">
+                    Repo
+                  </Link>
+                  <LazyLoadImage src={github} width="20.4rem" />
+                </Button>
+              ) : null}
+              {item.demo && (
+                <Button displa>
+                  <Link
+                    href={item.demo}
+                    target="_blank"
+                    display="flex"
+                    alignItems="center"
+                  >
+                    <Text mr="0.4rem">Demo</Text>
+                    <FaExternalLinkAlt size={17} color="black" />
+                  </Link>
+                </Button>
+              )}
+            </Flex>
           </Flex>
         )
       })}

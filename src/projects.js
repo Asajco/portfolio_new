@@ -7,7 +7,8 @@ export const projects = [
     jobDesription:
       'Basicaly i created this concept of management application for my job. In this project i did simple design and also whole logic behind this project.',
     tech: 'React Firebase ChakraUI',
-    repo: '',
+    repo: 'https://github.com/Asajco/manageIt_demo/tree/main',
+    demo: 'https://asajco.github.io/manageIt_demo/',
   },
   {
     name: 'Autocentrum',
