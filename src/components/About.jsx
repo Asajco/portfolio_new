@@ -59,10 +59,14 @@ const About = () => {
         My journey
       </Heading>
       <Line />
-
+      {renderTimelineItem(
+        'SHOWMORE',
+        'March/2024 - present',
+        'Front-end developer',
+      )}
       {renderTimelineItem(
         'BeCode',
-        'December/2022 - present',
+        'December/2022 - May/2023',
         'Front-end developer',
       )}
       {renderTimelineItem(

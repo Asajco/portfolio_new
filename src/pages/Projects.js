@@ -89,24 +89,24 @@ function Projects() {
             <Text textAlign="justify" fontFamily="Roboto Mono">
               {item.jobDesription}
             </Text>
-            <Flex alignItems="center">
-              {item.repo !== '' ? (
+            <Flex alignItems="center" mt="2rem">
+              {item.repo && (
                 <Button m="1rem">
                   <Link href={item.repo} target="_blank" mr="0.5rem">
                     Repo
                   </Link>
                   <LazyLoadImage src={github} width="20.4rem" />
                 </Button>
-              ) : null}
+              )}
               {item.demo && (
-                <Button displa>
+                <Button>
                   <Link
                     href={item.demo}
                     target="_blank"
                     display="flex"
                     alignItems="center"
                   >
-                    <Text mr="0.4rem">Demo</Text>
+                    <Text mr="0.4rem">{item.isLive ? 'Live' : 'Demo'}</Text>
                     <FaExternalLinkAlt size={17} color="black" />
                   </Link>
                 </Button>

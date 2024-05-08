@@ -1,5 +1,15 @@
 export const projects = [
   {
+    name: 'WiseBets',
+    description:
+      'WiseBets is an e-commerce platform powered by TypeScript on front-end and NodeJS on back-end, offering AI-generated betting predictions. Users can purchase memberships for personalized insights, benefiting from secure transactions and transparent performance metrics.',
+    role: 'Full-stack Developer/Designer',
+    jobDesription: 'Created whole page from scratch, design and so on.',
+    tech: 'React TypeScript NodeJS ChakraUI Firebase Vercel',
+    demo: 'https://wisebets.sk',
+    isLive: true,
+  },
+  {
     name: 'ManageIT',
     description:
       'ManageIT is a comprehensive ReactJS-based web application designed to streamline and enhance the management of product inventory within a company. With a user-friendly interface and robust features, ManageIT empowers users to efficiently monitor and control the current state of each product in storage, track changes, manage shifts, add new items, add new users, and record daily sales.',

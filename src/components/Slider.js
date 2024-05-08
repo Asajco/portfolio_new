@@ -11,6 +11,8 @@ import html from '../assets/html.png'
 import npm from '../assets/npm.png'
 import nextJS from '../assets/nextJS.png'
 import git from '../assets/git.png'
+import tailwind from '../assets/tailwind.png'
+import node from '../assets/node.png'
 import 'swiper/css'
 import 'swiper/css/pagination'
 import 'swiper/css/navigation'
@@ -19,10 +21,13 @@ import { Autoplay, Pagination, Navigation } from 'swiper/modules'
 const images = [
   { src: reactImage, alt: 'React' },
   { src: ts, alt: 'TypeScript' },
+  { src: nextJS, alt: 'NextJs' },
+  { src: node, alt: 'NodeJS' },
   { src: chakra, alt: 'Chakra UI' },
+  { src: tailwind, alt: 'Tailwind' },
   { src: firebase, alt: 'Firebase' },
   { src: figma, alt: 'Figma' },
-  { src: nextJS, alt: 'NextJs' },
+
   { src: html, alt: 'HTML' },
   { src: jira, alt: 'Jira' },
   { src: npm, alt: 'NPM' },

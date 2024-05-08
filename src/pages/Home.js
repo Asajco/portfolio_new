@@ -10,6 +10,7 @@ import Line from '../components/Line'
 import 'swiper/css'
 import Slider from '../components/Slider'
 import About from '../components/About'
+import { motion } from 'framer-motion'
 
 function Home() {
   return (
@@ -22,7 +23,7 @@ function Home() {
           mt="1rem"
           alignSelf="center"
         >
-          Front-End React & TypeScript Developer
+          Front-End NextJS & TypeScript Developer
         </Text>
 
         <Flex
@@ -63,6 +64,11 @@ function Home() {
           <Text
             textAlign="justify"
             w="55%"
+            as={motion.p}
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            viewport={{ once: true }}
+            exit={{ opacity: 0 }}
             fontFamily="Roboto Mono"
             fontWeight="hairline"
             sx={{
@@ -71,16 +77,15 @@ function Home() {
               },
             }}
           >
-            I am a 22-year-old web developer based in Slovakia with almost two
+            I am a 23-year-old web developer based in Slovakia with almost two
             years of professional experience. In 2023 i have graduated at
             University of Matej Bel in Slovakia. I have finnished my Bachelor in
             Computer Sciences and Software Engineering. Throughout my career, I
             have worked on various projects, improving my skills in a wide range
-            of technologies. My primary tech stack is bellow, but I also have
-            some experience with NodeJS, PostgreSQL, GraphQL, and Twig, which I
-            primarily used in school projects. As a developer, I'm always eager
-            to learn and grow, constantly seeking new opportunities to expand my
-            skill set and take on exciting challenges.
+            of technologies. My primary tech stack is bellow. As a developer,
+            I'm always eager to learn and grow, constantly seeking new
+            opportunities to expand my skill set and take on exciting
+            challenges.
           </Text>
         </Flex>
       </Flex>
