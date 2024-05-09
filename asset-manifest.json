@@ -1,7 +1,9 @@
 {
   "files": {
     "main.css": "/portfolio_new/static/css/main.c142c1fd.css",
-    "main.js": "/portfolio_new/static/js/main.663fcbc4.js",
+    "main.js": "/portfolio_new/static/js/main.3c435eee.js",
+    "static/media/node.png": "/portfolio_new/static/media/node.c518ed36534f25c64b33.png",
+    "static/media/tailwind.png": "/portfolio_new/static/media/tailwind.fb6e08fc24f133a494cc.png",
     "static/media/autocentrum.png": "/portfolio_new/static/media/autocentrum.874353cb0f0ac4046c15.png",
     "static/media/html.png": "/portfolio_new/static/media/html.64ac5aa7e13f6d203988.png",
     "static/media/voidd.png": "/portfolio_new/static/media/voidd.761a2a07cc2dc8f0d562.png",
@@ -19,10 +21,10 @@
     "static/media/firebase.png": "/portfolio_new/static/media/firebase.a149232308a20ac836d7.png",
     "index.html": "/portfolio_new/index.html",
     "main.c142c1fd.css.map": "/portfolio_new/static/css/main.c142c1fd.css.map",
-    "main.663fcbc4.js.map": "/portfolio_new/static/js/main.663fcbc4.js.map"
+    "main.3c435eee.js.map": "/portfolio_new/static/js/main.3c435eee.js.map"
   },
   "entrypoints": [
     "static/css/main.c142c1fd.css",
-    "static/js/main.663fcbc4.js"
+    "static/js/main.3c435eee.js"
   ]
 }
