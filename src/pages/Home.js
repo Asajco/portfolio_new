@@ -1,16 +1,16 @@
-import { Box, Text, Flex, Heading } from '@chakra-ui/react'
-import React from 'react'
-import { LazyLoadImage } from 'react-lazy-load-image-component'
+import { Box, Text, Flex, Heading } from "@chakra-ui/react";
+import React from "react";
+import { LazyLoadImage } from "react-lazy-load-image-component";
 
-import pc from '../assets/pc.png'
-
-import Line from '../components/Line'
+import pc from "../assets/pc.png";
+import Projects from "./Projects";
+import Line from "../components/Line";
 
 // Import Swiper styles
-import 'swiper/css'
-import Slider from '../components/Slider'
-import About from '../components/About'
-import { motion } from 'framer-motion'
+import "swiper/css";
+
+import About from "../components/About";
+import { motion } from "framer-motion";
 
 function Home() {
   return (
@@ -33,8 +33,8 @@ function Home() {
           p="1rem"
           alignItems="center"
           sx={{
-            '@media screen and (max-width: 1200px)': {
-              w: '100%',
+            "@media screen and (max-width: 1200px)": {
+              w: "100%",
             },
           }}
         >
@@ -45,8 +45,8 @@ function Home() {
           <Box
             mt="1rem"
             sx={{
-              '@media screen and (max-width: 1200px)': {
-                display: 'none',
+              "@media screen and (max-width: 1200px)": {
+                display: "none",
               },
             }}
           >
@@ -54,10 +54,10 @@ function Home() {
               src={pc}
               width="27%"
               style={{
-                position: 'absolute',
-                left: '0',
-                top: '0',
-                margin: '2rem 0rem 0rem 2rem',
+                position: "absolute",
+                left: "0",
+                top: "0",
+                margin: "2rem 0rem 0rem 2rem",
               }}
             />
           </Box>
@@ -72,8 +72,8 @@ function Home() {
             fontFamily="Roboto Mono"
             fontWeight="hairline"
             sx={{
-              '@media screen and (max-width: 1200px)': {
-                mt: '2rem',
+              "@media screen and (max-width: 1200px)": {
+                mt: "2rem",
               },
             }}
           >
@@ -90,21 +90,60 @@ function Home() {
         </Flex>
       </Flex>
       <Flex
-        mt="6rem"
         flexDirection="column"
         w="100%"
         alignItems="center"
-        h="40vh"
+        my={"6rem"}
+        gap={"3rem"}
       >
         <Heading fontSize="2.5rem" fontWeight="bold" fontFamily="Oswald">
           My tech stack
         </Heading>
-        <Slider />
+        {/* <Slider /> */}
+        <Flex
+          mt="0rem"
+          flexDirection="row"
+          alignItems="center"
+          justifySelf="center"
+          gap="3rem"
+          sx={{
+            "@media screen and (max-width: 1200px)": {
+              flexDirection: "column",
+              textAlign: "center",
+            },
+          }}
+        >
+          <Flex flexDirection="column">
+            <Heading fontSize="2.5rem" fontWeight="bold" fontFamily="Oswald">
+              Front-end
+            </Heading>
+            <Text>React, TypeScript, NextJS, HTML5, CSS3, SCSS</Text>
+          </Flex>
+          <Flex flexDirection="column">
+            <Heading fontSize="2.5rem" fontWeight="bold" fontFamily="Oswald">
+              Back-end
+            </Heading>
+
+            <Text>NodeJS, Express</Text>
+          </Flex>
+          <Flex flexDirection="column">
+            <Heading fontSize="2.5rem" fontWeight="bold" fontFamily="Oswald">
+              Database
+            </Heading>
+            <Text>PostgreSQL, FIrebase, Supabase</Text>
+          </Flex>
+          <Flex flexDirection="column">
+            <Heading fontSize="2.5rem" fontWeight="bold" fontFamily="Oswald">
+              Other
+            </Heading>
+            <Text>Jira, Vercel, Git, Figma</Text>
+          </Flex>
+        </Flex>
       </Flex>
 
       <About />
     </Flex>
-  )
+  );
 }
 
-export default Home
+export default Home;
